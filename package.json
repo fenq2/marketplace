@@ -1,0 +1,25 @@
+{
+  "name": "halolab-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "(cd client && yarn install) && (cd server && yarn install)",
+    "server": "cd server && yarn server",
+    "client": "cd client && yarn start",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenq2/test-marketplace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fenq2/test-marketplace/issues"
+  },
+  "homepage": "https://github.com/fenq2/test-marketplace#readme",
+  "devDependencies": {
+    "concurrently": "^6.4.0"
+  }
+}
