@@ -1,0 +1,18 @@
+.cardList {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1136px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media screen and (max-width: 1170px) {
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 575px) {
+        gap: 20px;
+    }
+}

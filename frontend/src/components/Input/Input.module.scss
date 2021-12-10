@@ -1,0 +1,41 @@
+.input {
+    width: 100%;
+    margin-bottom: 16px;
+
+    &Error {
+        .inputItem {
+            border: 1px solid #e43f3f;
+        }
+    }
+
+    &Success {
+        .inputItem {
+            border: 1px solid #4bcfa0;
+        }
+    }
+
+    &Item {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        border-radius: 16px;
+        width: 100%;
+        color: #000;
+        outline: none;
+
+        &:focus {
+            border: 1px solid rgba(0, 0, 0, 0.4);
+        }
+
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &Label {
+        display: block;
+        padding-top: 2px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #e43f3f;
+    }
+}

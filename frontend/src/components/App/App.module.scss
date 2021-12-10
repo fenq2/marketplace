@@ -1,0 +1,16 @@
+.App {
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    padding: 105px 20px;
+
+    @media screen and (max-width: 575px) {
+        padding: 40px 20px;
+    }
+
+    &Footer {
+        position: relative;
+        min-height: 320px;
+        width: max-content;
+        margin: 0 auto;
+    }
+}
