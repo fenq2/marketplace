@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "(cd client && yarn install) && (cd server && yarn install)",
+    "postinstall": "(cd frontend && yarn install) && (cd server && yarn install)",
     "server": "cd server && yarn server",
-    "client": "cd client && yarn start",
-    "dev": "concurrently \"yarn server\" \"yarn client\""
+    "client": "cd frontend && yarn start",
+    "dev": "concurrently \"yarn server\" \"yarn frontend\""
   },
   "repository": {
     "type": "git",
