@@ -7,7 +7,7 @@
     "postinstall": "(cd frontend && yarn install) && (cd server && yarn install)",
     "server": "cd server && yarn server",
     "client": "cd frontend && yarn start",
-    "dev": "concurrently \"yarn server\" \"yarn frontend\""
+    "dev": "concurrently \"yarn server\" \"yarn client\""
   },
   "repository": {
     "type": "git",
